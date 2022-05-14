@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head.ejs') %>
+    <title>Quotes</title>
+<body>
+    <h1>Some of the wonderful quotes</h1>
+    <%quotes.forEach((quote)=>{ %>
+        <h2><%= quote.author %> </h2>
+        <p><%= quote.quote %> </p>
+    <%})%>
+</body>
+</html>
