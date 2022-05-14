@@ -1,24 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | <%= title%> </title>
-</head>
+<%- include('./partials/head.ejs') %>
 <body>
-    <nav>
-        <div class="site-title">
-            <a href="/">Blog Ninja</a>
-            <p> A net ninja </p>
-        </div>
-        <ul>
-            <li><a href="/">Blogs</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/blogs/create">New Blog</a></li>
-
-        </ul>
-    </nav>
+    <%- include('./partials/nav.ejs') %>
     <div class="about content">
         <h2>About Us</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magnam sed modi voluptatem! Tempore vel enim consectetur sint ullam laudantium laboriosam eum nemo assumenda provident. Quidem neque ab natus nobis!</p>
@@ -26,5 +10,6 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto magnam sed modi voluptatem! Tempore vel enim consectetur sint ullam laudantium laboriosam eum nemo assumenda provident. Quidem neque ab natus nobis!</p>
     </div>
     <h2><%= about%></h2>
+    <%- include('./partials/footer.ejs') %>
 </body>
 </html>
